@@ -1,0 +1,49 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 2.855863033663389,
+        "y": 5.566417514601411
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 2.361903061098285,
+        "y": 5.518363150740554
+      },
+      "isLocked": false,
+      "linkedName": "BluePos2non_Step1"
+    },
+    {
+      "anchor": {
+        "x": 1.4649253051475237,
+        "y": 5.518363150740554
+      },
+      "prevControl": {
+        "x": 2.030411281725178,
+        "y": 5.5086133925236975
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "BPos2non_Step2"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [],
+  "globalConstraints": {
+    "maxVelocity": 1.5,
+    "maxAcceleration": 2.0,
+    "maxAngularVelocity": 100.0,
+    "maxAngularAcceleration": 72.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 0.0,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": null,
+  "previewStartingState": null,
+  "useDefaultConstraints": true
+}

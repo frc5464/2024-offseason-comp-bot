@@ -1,0 +1,79 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 8.3775038808985,
+        "y": 2.5739361692500116
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 3.72686921145814,
+        "y": 0.6824830751799291
+      },
+      "isLocked": false,
+      "linkedName": "Bpos3_Step3"
+    },
+    {
+      "anchor": {
+        "x": 1.0846847346901356,
+        "y": 4.796881042693202
+      },
+      "prevControl": {
+        "x": 3.984835036407963,
+        "y": 1.3471054821712953
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "Bpos3_Step4"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [
+    {
+      "name": "New Constraints Zone",
+      "minWaypointRelativePos": 0.9,
+      "maxWaypointRelativePos": 1.0,
+      "constraints": {
+        "maxVelocity": 2.0,
+        "maxAcceleration": 1.5,
+        "maxAngularVelocity": 100.0,
+        "maxAngularAcceleration": 72.0
+      }
+    }
+  ],
+  "eventMarkers": [
+    {
+      "name": "New Event Marker",
+      "waypointRelativePos": 0.8,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "SpeakerShootCommand"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 3.0,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 100.0,
+    "maxAngularAcceleration": 72.0
+  },
+  "goalEndState": {
+    "velocity": 0.0,
+    "rotation": -58.39249775375118,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": null,
+  "previewStartingState": null,
+  "useDefaultConstraints": false
+}

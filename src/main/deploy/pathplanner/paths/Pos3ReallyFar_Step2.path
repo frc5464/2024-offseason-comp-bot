@@ -1,0 +1,93 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 8.281950694955519,
+        "y": 0.7835083476434771
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 6.679851536341248,
+        "y": 1.4968517686323124
+      },
+      "isLocked": false,
+      "linkedName": "Pos3reallyfar_Step1"
+    },
+    {
+      "anchor": {
+        "x": 8.281950694955519,
+        "y": 2.4440782784699477
+      },
+      "prevControl": {
+        "x": 7.2411709495783665,
+        "y": 2.221889344063589
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "Pos3reallyfar_Step2"
+    }
+  ],
+  "rotationTargets": [
+    {
+      "waypointRelativePos": 0.25,
+      "rotationDegrees": -24.775140568831954,
+      "rotateFast": false
+    }
+  ],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "DummySpeakerShoot",
+      "waypointRelativePos": 0.1,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "DummySpeakerShootCommand"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Intake",
+      "waypointRelativePos": 0.75,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "IntakeCommand"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 1.5,
+    "maxAcceleration": 2.0,
+    "maxAngularVelocity": 100.0,
+    "maxAngularAcceleration": 72.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 5.079607860014512,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": null,
+  "previewStartingState": {
+    "rotation": -25.346175941946726,
+    "velocity": 0
+  },
+  "useDefaultConstraints": true
+}
