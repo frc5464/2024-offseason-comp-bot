@@ -4,12 +4,71 @@
 
 package frc.robot.subsystems;
 
+import java.util.Optional;
+
+import edu.wpi.first.math.geometry.Pose2d;
+import edu.wpi.first.math.kinematics.ChassisSpeeds;
+import edu.wpi.first.math.kinematics.SwerveModuleState;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class DriveSubsystem extends SubsystemBase {
   /** Creates a new ExampleSubsystem. */
-  public DriveSubsystem() {}
+  public DriveSubsystem() {
+  
+
+  }
+
+  public double getGyroAngle(){
+      return 1;
+  }
+
+  public Optional<Pose2d> getPose(){
+    return;
+  }
+
+  private ChassisSpeeds getChassisSpeeds(){
+    return;
+    
+  }
+
+  public void resetOdometry(Pose2d pose){
+
+  }
+
+  public void drive(double xSpeed, double ySpeed, double rot, boolean fieldRelative, boolean rateLimit){
+
+  }
+
+  public void setX(){
+
+  }
+
+  public setModuleStates(SwerveModuleState[] desiredStates){
+
+  }
+
+  public void resetEnoders(){
+    
+  }
+
+  public void zeroHeading(){
+
+  }
+
+  public void breakMode(){
+
+  }
+
+  public Optional<Double> getHeading(){
+
+  }
+
+  public void addVisionData(Pose2d visionEstimatePose, double timeStamp){
+
+  }
+
+  
 
   /**
    * Example command factory method.
