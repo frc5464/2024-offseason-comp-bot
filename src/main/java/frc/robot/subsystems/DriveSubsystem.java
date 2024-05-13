@@ -4,17 +4,47 @@
 
 package frc.robot.subsystems;
 
+<<<<<<< Updated upstream
 import java.util.Optional;
 
 import edu.wpi.first.math.geometry.Pose2d;
 import edu.wpi.first.math.kinematics.ChassisSpeeds;
 import edu.wpi.first.math.kinematics.SwerveModuleState;
+=======
+import com.revrobotics.CANSparkMax;
+import com.revrobotics.CANSparkLowLevel.MotorType;
+
+import edu.wpi.first.wpilibj.drive.DifferentialDrive;
+>>>>>>> Stashed changes
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
+
+
 public class DriveSubsystem extends SubsystemBase {
+
+  private DifferentialDrive drivetrain;
+  private final CANSparkMax frontleft = new CANSparkMax(2, MotorType.kBrushless);
+  private final CANSparkMax frontright = new CANSparkMax(3, MotorType.kBrushless); 
+  private final CANSparkMax backleft = new CANSparkMax(4, MotorType.kBrushless);
+  private final CANSparkMax backright = new CANSparkMax(5, MotorType.kBrushless);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /** Creates a new ExampleSubsystem. */
   public DriveSubsystem() {
+<<<<<<< Updated upstream
   
 
   }
@@ -69,6 +99,12 @@ public class DriveSubsystem extends SubsystemBase {
   }
 
   
+=======
+    frontleft.follow(backleft);
+    frontright.follow(backright);
+    drivetrain = new DifferentialDrive(backleft, backright);
+  }
+>>>>>>> Stashed changes
 
   /**
    * Example command factory method.
@@ -97,6 +133,10 @@ public class DriveSubsystem extends SubsystemBase {
   @Override
   public void periodic() {
     // This method will be called once per scheduler run
+  }
+
+  public void tankdrive(double left, double right){
+    drivetrain.tankDrive(left, right);
   }
 
   @Override
